@@ -11,40 +11,40 @@ wget --no-check-certificate -qO NetReInstall.sh 'https://raw.githubusercontent.c
 
 安装CentOS 6.8 x32：
 
-bash InstallNET.sh -c 6.8 -v 32 -a
+bash NetReInstall.sh -c 6.8 -v 32 -a
 
 安装CentOS 6.8 x64：
 
-bash InstallNET.sh -c 6.8 -v 64 -a
+bash NetReInstall.sh -c 6.8 -v 64 -a
 
 安装CentOS 6.9 x32：
 
-bash InstallNET.sh -c 6.9 -v 32 -a
+bash NetReInstall.sh -c 6.9 -v 32 -a
 
 安装CentOS 6.9 x64：
 
-bash InstallNET.sh -c 6.9 -v 64 -a
+bash NetReInstall.sh -c 6.9 -v 64 -a
 
 安装Debian 7 x32：
 
-bash InstallNET.sh -d 7 -v 32 -a
+bash NetReInstall.sh -d 7 -v 32 -a
 
 安装Debian 8 x64：
 
-bash InstallNET.sh -d 8 -v 64 -a
+bash NetReInstall.sh -d 8 -v 64 -a
 
 安装Debian 9 x64：
 
-bash InstallNET.sh -d 9 -v 64 -a
+bash NetReInstall.sh -d 9 -v 64 -a
 
 安装Ubuntu 14.04 x64：
 
-bash InstallNET.sh -u trusty -v 64 -a
+bash NetReInstall.sh -u trusty -v 64 -a
 
 安装Ubuntu 16.04 x64：
 
-bash InstallNET.sh -u xenial -v 64 -a
+bash NetReInstall.sh -u xenial -v 64 -a
 
 安装Ubuntu 18.04 x64：
 
-bash InstallNET.sh -u bionic -v 64 -a
+bash NetReInstall.sh -u bionic -v 64 -a
