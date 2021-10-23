@@ -5,7 +5,7 @@
 
 wget --no-check-certificate -qO NetReInstall.sh 'https://raw.githubusercontent.com/huxuansong/NetReInstall/main/NetReInstall.sh' && chmod a+x NetReInstall.sh
 
-手动系统重装命令:
+<b>手动系统重装命令:</b>
 
 在下面选择将要按的的系统，运行对应命令即可，一般20-30分钟就会安装完成。装默认root密码：Vicer。
 
