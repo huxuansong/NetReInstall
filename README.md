@@ -68,6 +68,92 @@ Usage:
 
 # 快速使用示例:
 
+# 快速使用示例:
+
+### centos 6:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -c 6.9 -v 64 -a --mirror 'http://mirror.centos.org/centos'
+```
+### debian 7:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 7 -v 64 -a
+```
+### debian 8:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 8 -v 64 -a
+```
+### debian 9:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 9 -v 64 -a
+```
+### debian 10:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 10 -v 64 -a
+```
+### debian 11:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 11 -v 64 -a
+```
+### ubuntu 14.04:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 14.04 -v 64 -a
+```
+### ubuntu 16.04:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 16.04 -v 64 -a
+```
+### ubuntu 18.04:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 18.04 -v 64 -a
+```
+### ubuntu 20.04:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 20.04 -v 64 -a
+```
+### 甲骨文ARM:
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 10 -v arm64 -a
+```
+### CentOS系统用萌咖dd脚本出现Not Found grub.的解决方法
+```
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
+### VPS或者独立服务器有多个网卡.
+##### 例:安装debian9，网卡名称enp0s5和enp0s6,enp0s6可用.
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 9 -v 64 -a -i enp0s6
+```
+### VPS安装debian9并且自定义源.
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 9 -v 64 -a --mirror 'http://archive.debian.org/debian/'
+```
+### VPS安装debian9无法识别IP地址并且自定义源.
+```
+bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 9 -v 64 -a --ip-addr x.x.x.x --ip-gate x.x.x.x --ip-mask x.x.x.x  --mirror 'http://archive.debian.org/debian/'
+```
+### VPS安装debian8并且自定义源.
+```
+bash NetReInstall.sh -d 8 -v 64 -a --mirror 'http://archive.debian.org/debian'
+
+
+## 一些可用镜像地址:
+```
+# 推荐使用带有 /GoogleDrive/<File_ID> 链接, 速度更快.
+# 当然也可以使用自己GoogleDrive中储存的镜像,使用方式:
+  https://image.moeclub.org/GoogleDrive/<File_ID>
+ 
+# win7emb_x86.tar.gz:
+  https://image.moeclub.org/GoogleDrive/1srhylymTjYS-Ky8uLw4R6LCWfAo1F3s7 
+  https://image.moeclub.org/win7emb_x86.tar.gz
+ 
+# win8.1emb_x64.tar.gz:
+  https://image.moeclub.org/GoogleDrive/1cqVl2wSGx92UTdhOxU9pW3wJgmvZMT_J
+  https://image.moeclub.org/win8.1emb_x64.tar.gz
+```
+
+
+
 
 一键网络重装纯净版Debian/Ubuntu/CentOS系统脚本是由萌咖博主制作的，可以为的Linux系统VPS简单快速的一键网络重装Debian、Ubuntu、CentOS纯净版系统，目前此脚本不支持OpenVZ架构的VPS，全自动安后装默认root密码：Vicer，安装完成后请自行更改密码。
 
