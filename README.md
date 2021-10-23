@@ -1,6 +1,6 @@
 使用下面命令下载自动重装系统脚本
 
-wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/huxuansong/NetReInstall/main/NetReInstall.sh' && chmod a+x NetReInstall.sh
+wget --no-check-certificate -qO NetReInstall.sh 'https://raw.githubusercontent.com/huxuansong/NetReInstall/main/NetReInstall.sh' && chmod a+x NetReInstall.sh
 
 系统重装命令:
 
