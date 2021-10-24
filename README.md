@@ -152,7 +152,11 @@ bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 9 -v 64 -a --
 ### VPS安装debian8并且自定义源.
 ```
 bash NetReInstall.sh -d 8 -v 64 -a --mirror 'http://archive.debian.org/debian'
-
+```
+### VPS安装Ubuntu 14.04 x64并且自定义源.
+```
+bash NetReInstall.sh -u 14.04 -v 64 -a --mirror 'http://archive.ubuntu.com/ubuntu'
+```
 
 ## 一些可用镜像地址:
 ```
