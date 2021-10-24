@@ -67,9 +67,9 @@ Usage:
 # 快速使用示例:
 
 ### 自动下载重装命令:
-
+```
 wget --no-check-certificate -qO NetReInstall.sh 'https://raw.githubusercontent.com/huxuansong/NetReInstall/main/NetReInstall.sh' && chmod a+x NetReInstall.sh
-
+```
 ### 手动下载重装命令:
 
 在下面选择将要按的的系统，运行对应命令即可，一般20-30分钟就会安装完成。装默认root密码：MoeClub.org。
@@ -81,9 +81,9 @@ bash NetReInstall.sh -c 6.8 -v 32 -a
 ### 安装CentOS 6.8 x64：
 
 bash NetReInstall.sh -c 6.8 -v 64 -a
-
+```
 bash NetReInstall.sh -c 6.8 -v 64 -a --mirror 'http://mirror.centos.org/centos'
-
+```
 ### 安装CentOS 6.9 x32：
 
 bash NetReInstall.sh -c 6.9 -v 32 -a
