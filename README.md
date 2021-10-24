@@ -1,8 +1,8 @@
 # 萌咖大佬的一键DD脚本
-Debian/Ubuntu/CentOS 网络安装/网络重装/纯净安装 一键脚本
-
+一键网络重装纯净版Debian/Ubuntu/CentOS系统脚本是由萌咖博主制作的，可以为的Linux系统VPS简单快速的一键网络重装Debian、Ubuntu、CentOS纯净版系统，目前此脚本不支持OpenVZ架构的VPS，全自动安后装默认root密码：MoeClub.org，安装完成后请自行更改密码。
 
 ### 背景:
+
 适用于由GRUB引导的CentOS,Ubuntu,Debian系统.
 
 使用官方发行版去掉模板预装的软件.
@@ -19,15 +19,12 @@ Debian/Ubuntu/CentOS 网络安装/网络重装/纯净安装 一键脚本
 
 能够全自动重装Debian/Ubuntu/CentOS等系统.
 
-同时提供dd安装镜像功能,例如: 全自动无救援dd安装windows系统.
-
-全自动安装CentOS时默认提供VNC功能,可使用VNC Viewer查看进度,
-VNC端口为1或者5901,可自行尝试连接.(成功后VNC功能会消失.)
-目前CentOS系统只支持任意版本重装为 CentOS 6.x 及以下版本.
+全自动安装CentOS时默认提供VNC功能,可使用VNC Viewer查看进度,VNC端口为1或者5901,可自行尝试连接.(成功后VNC功能会消失.),目前CentOS只支持重装为CentOS6。
 
 特别注意:OpenVZ构架不适用.
 
 确保安装了所需软件:
+
 #### Debian/Ubuntu:
 ```
 apt-get install -y xz-utils openssl gawk file
@@ -37,6 +34,7 @@ apt-get install -y xz-utils openssl gawk file
 yum install -y xz openssl gawk file
 ```
 如果出现了错误,请运行:
+
 #### Debian/Ubuntu:
 ```
 apt-get update
@@ -68,49 +66,68 @@ Usage:
 
 # 快速使用示例:
 
-# 快速使用示例:
+### 自动下载重装命令:
 
-### centos 6:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -c 6.9 -v 64 -a --mirror 'http://mirror.centos.org/centos'
-```
-### debian 7:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 7 -v 64 -a
-```
-### debian 8:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 8 -v 64 -a
-```
-### debian 9:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 9 -v 64 -a
-```
-### debian 10:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 10 -v 64 -a
-```
-### debian 11:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 11 -v 64 -a
-```
-### ubuntu 14.04:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 14.04 -v 64 -a
-```
-### ubuntu 16.04:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 16.04 -v 64 -a
-```
-### ubuntu 18.04:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 18.04 -v 64 -a
-```
-### ubuntu 20.04:
-```
-bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -u 20.04 -v 64 -a
-```
-### 甲骨文ARM:
+wget --no-check-certificate -qO NetReInstall.sh 'https://raw.githubusercontent.com/huxuansong/NetReInstall/main/NetReInstall.sh' && chmod a+x NetReInstall.sh
+
+### 手动下载重装命令:
+
+在下面选择将要按的的系统，运行对应命令即可，一般20-30分钟就会安装完成。装默认root密码：MoeClub.org。
+
+### 安装CentOS 6.8 x32：
+
+bash NetReInstall.sh -c 6.8 -v 32 -a
+
+### 安装CentOS 6.8 x64：
+
+bash NetReInstall.sh -c 6.8 -v 64 -a
+
+bash NetReInstall.sh -c 6.8 -v 64 -a --mirror 'http://mirror.centos.org/centos'
+
+### 安装CentOS 6.9 x32：
+
+bash NetReInstall.sh -c 6.9 -v 32 -a
+
+### 安装CentOS 6.9 x64：
+
+bash NetReInstall.sh -c 6.9 -v 64 -a
+
+### 安装Debian 7 x32：
+
+bash NetReInstall.sh -d 7 -v 32 -a
+
+### 安装Debian 8 x64：
+
+bash NetReInstall.sh -d 8 -v 64 -a
+
+### 安装Debian 9 x64：
+
+bash NetReInstall.sh -d 9 -v 64 -a
+
+### 安装Ubuntu 14.04 x64：
+
+bash NetReInstall.sh -u trusty -v 64 -a
+
+bash NetReInstall.sh -u 14.04 -v 64 -a
+
+### 安装Ubuntu 16.04 x64：
+
+bash NetReInstall.sh -u xenial -v 64 -a
+
+bash NetReInstall.sh -u 16.04 -v 64 -a
+
+### 安装Ubuntu 18.04 x64：
+
+bash NetReInstall.sh -u bionic -v 64 -a
+
+bash NetReInstall.sh -u 18.04 -v 64 -a
+
+### 安装Ubuntu 20.04 x64：
+
+bash NetReInstall.sh -u 20.04 -v 64 -a
+
+
+###  甲骨文ARM:
 ```
 bash <(wget --no-check-certificate -qO- 'https://git.io/JeiRm') -d 10 -v arm64 -a
 ```
@@ -153,55 +170,3 @@ bash NetReInstall.sh -d 8 -v 64 -a --mirror 'http://archive.debian.org/debian'
 ```
 
 
-
-
-一键网络重装纯净版Debian/Ubuntu/CentOS系统脚本是由萌咖博主制作的，可以为的Linux系统VPS简单快速的一键网络重装Debian、Ubuntu、CentOS纯净版系统，目前此脚本不支持OpenVZ架构的VPS，全自动安后装默认root密码：Vicer，安装完成后请自行更改密码。
-
-
-<b>自动下载重装命令：</b>
-
-wget --no-check-certificate -qO NetReInstall.sh 'https://raw.githubusercontent.com/huxuansong/NetReInstall/main/NetReInstall.sh' && chmod a+x NetReInstall.sh
-
-<b>手动系统重装命令:</b>
-
-在下面选择将要按的的系统，运行对应命令即可，一般20-30分钟就会安装完成。装默认root密码：Vicer。
-
-安装CentOS 6.8 x32：
-
-bash NetReInstall.sh -c 6.8 -v 32 -a
-
-安装CentOS 6.8 x64：
-
-bash NetReInstall.sh -c 6.8 -v 64 -a
-
-安装CentOS 6.9 x32：
-
-bash NetReInstall.sh -c 6.9 -v 32 -a
-
-安装CentOS 6.9 x64：
-
-bash NetReInstall.sh -c 6.9 -v 64 -a
-
-安装Debian 7 x32：
-
-bash NetReInstall.sh -d 7 -v 32 -a
-
-安装Debian 8 x64：
-
-bash NetReInstall.sh -d 8 -v 64 -a
-
-安装Debian 9 x64：
-
-bash NetReInstall.sh -d 9 -v 64 -a
-
-安装Ubuntu 14.04 x64：
-
-bash NetReInstall.sh -u trusty -v 64 -a
-
-安装Ubuntu 16.04 x64：
-
-bash NetReInstall.sh -u xenial -v 64 -a
-
-安装Ubuntu 18.04 x64：
-
-bash NetReInstall.sh -u bionic -v 64 -a
